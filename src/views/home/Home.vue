@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h2>{{ msg }} Page</h2>
+  <div id="home">
+    <img src="~assets/logo.png" />
   </div>
 </template>
 
@@ -8,26 +8,14 @@
 export default {
   name: "Home",
   components: {},
-  mixins: [],
-  props: {
-    msg: {
-      type: String,
-      default: "Home",
-    },
-  },
-  data: function () {
+  data() {
     return {};
   },
-  computed: {},
-  watch: {},
-  created() {},
-  mounted() {},
-  methods: {},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-.home {
+#home {
 }
 </style>

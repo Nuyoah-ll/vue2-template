@@ -9,6 +9,10 @@ const files = require.context('@/views', true, /router\.js$/);
 const routes = files.keys().map(key => {
   const page = require('@/views' + key.replace('.', ''));
   return page.default;
+});
+routes.push({
+  path: "/",
+  redirect: "/home"
 })
 
 
